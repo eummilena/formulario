@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Cabin+Sketch&family=Pacifico&display=swap');
+
+:root {
+    --branco: #FFF;
+    --azul: #A8D8EC;
+    --roxo: #9173A9;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+
+}
+
+body {
+    background: url(../image/Rectangle\ 1.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 12%;
+    
+
+}
+
+.container {
+    padding: 1em 12em;
+}
+
+header {
+    background: 00000;
+    padding: 0.1em;
+    border-radius: 5px;
+
+}
+
+h1 {
+    font-family: 'Bungee Inline', cursive;
+    text-align: center;
+    color: var(--roxo);
+    font-size: 45px;
+
+}
+
+.descricao {
+    text-align: justify;
+    color: var(--branco);
+    font-size: 20px;
+    padding: 0 2%;
+}
+
+form,
+input {
+    color: var(--branco);
+    font-size: 18px;
+}
+
+form,
+legend {
+    font-size: 20px;
+}
+
+p {
+    text-align: end;
+}
+
+.btn {
+    font-size: 20px;
+    width: 25%;
+    /* margin-bottom: 0.3em;
+    margin-left: 14em; */
+    margin: 1em 14em;
+
+}
+
+@media(max-width:1024px) {
+    .container {
+        padding: 2em 6em;
+    }
+}
+
+@media (max-width:912px) {
+    .container {
+        padding: 10em 5em;
+    }
+
+    .btn {
+        margin: 1em 10em;
+    }
+
+}
+
+@media (max-width:720px) {
+    .container {
+        padding: 1em 6em;
+    }
+
+    .btn {
+        margin: 1em 6em;
+    }
+}
+
+@media (max-width:414px) {
+    body {
+        background: none;
+    }
+
+    .container {
+        padding: 1em;
+    }
+
+    .btn {
+        margin: 1em 7em;
+    }
+
+    @media (max-width:360px) {
+        .btn {
+            margin: 1em 6em;
+
+        }
+    }
+
+    @media (max-width:280px) {
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        p {
+            text-align: justify;
+
+        }
+
+        .container {
+            padding: 0;
+        }
+
+        .btn {
+            width: 30%;
+            margin: 1em 5em;
+        }
+
+    }
+
+}
